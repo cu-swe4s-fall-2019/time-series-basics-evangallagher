@@ -18,7 +18,7 @@ ssshtest is required to run functional tests `test -e ssshtest || wget -qhttps:/
 
 ## How to use
 
-data_import.py is the script to run. It is used in t
+data_import.py is the executable function, run with data_import.sh
 
 ### Import Data
 
