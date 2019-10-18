@@ -1,19 +1,18 @@
-language: python
+Language: python
 
 before_install:
     - wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
     - bash Miniconda3-latest-Linux-x86_64.sh -b
     - . /home/travis/miniconda3/etc/profile.d/conda.sh
-    - conda update --yes conda
     - conda config --add channels r
     - conda create --yes -n test
     - conda activate test
     - conda install -y pycodestyle
-    - conda install -y python-dateutil
+    - conda install -y matplotlib
     - conda install --yes python=3.6
 
 script:
-    - python tests.py
-    - pycodestyle tests.py
-    - pycodestyle data_import.py
-    - bash tests.sh
+    - python test_hash_functions.py
+    - python test_hash_tables.py
+    - python test_scatter.py
+    - bash functional_tests.sh
