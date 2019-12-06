@@ -39,3 +39,5 @@ imputs data with an object and resolution
 ## Output
 
 Creates a csv titled base_name.csv.
+
+## December 5th update:
